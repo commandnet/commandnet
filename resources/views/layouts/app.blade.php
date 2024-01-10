@@ -109,5 +109,7 @@
             @yield('content')
         </main>      
 
+        @stack('endscripts')
+
 </body>
 </html>
