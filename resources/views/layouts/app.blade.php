@@ -9,14 +9,10 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body>
+<body data-bs-theme="dark">
     
     <main class="d-flex flex-nowrap">         
         <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark">
@@ -105,7 +101,7 @@
             @csrf
         </form>
 
-        <main class="container-fluid">
+        <main class="container-fluid" id="content-container">
             @yield('content')
         </main>      
 
