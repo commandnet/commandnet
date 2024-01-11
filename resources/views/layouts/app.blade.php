@@ -11,8 +11,13 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+
+    @stack('head')
+
 </head>
 <body data-bs-theme="dark">
+    @include('components.modal')
     
     <main class="d-flex flex-nowrap">         
         <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark">

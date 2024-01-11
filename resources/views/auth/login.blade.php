@@ -1,4 +1,4 @@
-@extends('layouts.register')
+@extends('layouts.login')
 
 @section('content')
 <div class="container">
@@ -7,7 +7,7 @@
             <main class="form-signin w-100 m-auto">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                    <img class="mb-4" src="{{ asset('images/logo.png') }}" alt="">
+                    <img class="mb-4" src="{{ asset('images/logo_login.png') }}" alt="">
               
                     <div class="form-floating">
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>

@@ -1,6 +1,5 @@
 import './bootstrap';
-import 'jquery/dist/jquery'
+import $ from 'jquery';
+window.$ = window.jQuery = $;
 
-import 'leaflet/dist/leaflet'
-import 'leaflet-mouse-position/src/L.Control.MousePosition'
-import 'leaflet-control-geocoder/dist/Control.Geocoder'
+import './situation';
